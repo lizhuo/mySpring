@@ -1,5 +1,6 @@
 package com.tt.spring.bean.factory.support;
 
+import com.tt.spring.bean.definition.BeanDefinition;
 import com.tt.spring.bean.factory.AutowireCapableBeanFactory;
 
 /**
@@ -9,10 +10,10 @@ import com.tt.spring.bean.factory.AutowireCapableBeanFactory;
  */
 public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFactory implements AutowireCapableBeanFactory {
 
-//	@Override
-//	public Object createBean(BeanDefinition beanDefinition) {
-//		// TODO  会完成Bean的创建
-//		return null;
-//	}
+	@Override
+	public Object createBean(BeanDefinition beanDefinition) {
+		// TODO  会完成Bean的创建
+		return null;
+	}
 
 }
