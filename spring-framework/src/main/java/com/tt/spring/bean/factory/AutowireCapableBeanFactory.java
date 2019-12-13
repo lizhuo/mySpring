@@ -1,6 +1,6 @@
 package com.tt.spring.bean.factory;
 
-import com.tt.spring.definition.BeanDefinition;
+import com.tt.spring.bean.definition.BeanDefinition;
 
 /**
  * @author lizhuo

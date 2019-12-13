@@ -1,4 +1,4 @@
-package com.tt.spring.definition;
+package com.tt.spring.bean.definition;
 
 
 import java.util.ArrayList;
@@ -21,7 +21,8 @@ public class BeanDefinition {
 	/**
 	 * bean中的属性信息
 	 */
-	private List<PropertyValue> propertyValues = new ArrayList<>();
+	private List<PropertyValue> propertyValues = new ArrayList<PropertyValue>();
+	private List<PropertyValue> ids = new ArrayList<>();
 
 	public BeanDefinition(String clazzName, String beanName) {
 		this.beanName = beanName;
@@ -49,7 +50,7 @@ public class BeanDefinition {
 	}
 
 	public void addPropertyValue(PropertyValue propertyValue) {
-		this.propertyValues.add(propertyValue);
+		//this.propertyValues.add(propertyValue);
 	}
 
 	public String getClazzName() {

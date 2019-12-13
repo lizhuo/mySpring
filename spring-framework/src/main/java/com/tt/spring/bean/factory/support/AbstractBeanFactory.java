@@ -1,4 +1,6 @@
-package com.tt.spring.bean.factory;
+package com.tt.spring.bean.factory.support;
+
+import com.tt.spring.bean.factory.BeanFactory;
 
 /**
  * @author lizhuo
@@ -9,6 +11,7 @@ public class AbstractBeanFactory implements BeanFactory {
 
 	@Override
 	public Object getBean(String name) {
+		// TODO 会调用 AbstractAutowireCapableBeanFactory的createBean功能
 		return null;
 	}
 

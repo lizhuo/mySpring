@@ -1,4 +1,4 @@
-package com.tt.spring.definition;
+package com.tt.spring.bean.definition;
 
 /**
  * @author lizhuo

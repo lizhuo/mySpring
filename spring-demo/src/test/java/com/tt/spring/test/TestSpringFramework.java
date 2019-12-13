@@ -1,7 +1,7 @@
 package com.tt.spring.test;
 
 import com.tt.spring.bean.factory.BeanFactory;
-import com.tt.spring.bean.DefaultListableBeanFactory;
+import com.tt.spring.bean.factory.support.DefaultListableBeanFactory;
 import com.tt.spring.po.Student;
 import org.junit.Test;
 
