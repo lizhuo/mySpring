@@ -15,8 +15,8 @@ public class TestSpringFramework {
 	@Test
 	public void test() {
 		String location = "beans.xml";
-		BeanFactory beanFactory = new DefaultListableBeanFactory(location);
-		Student student = beanFactory.getBean("student");
+//		BeanFactory beanFactory = new DefaultListableBeanFactory(location);
+//		Student student = beanFactory.getBean("student");
 	}
 
 }

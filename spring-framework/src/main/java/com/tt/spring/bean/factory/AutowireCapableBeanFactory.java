@@ -1,6 +1,5 @@
 package com.tt.spring.bean.factory;
 
-import com.tt.spring.bean.definition.BeanDefinition;
 
 /**
  * @author lizhuo
@@ -9,11 +8,11 @@ import com.tt.spring.bean.definition.BeanDefinition;
  */
 public interface AutowireCapableBeanFactory extends BeanFactory  {
 
-	/**
-	 * 创建Bean实例的功能
-	 * @param beanDefinition
-	 * @return
-	 */
-	Object createBean(BeanDefinition beanDefinition);
+//	/**
+//	 * 创建Bean实例的功能
+//	 * @param beanDefinition
+//	 * @return
+//	 */
+//	Object createBean(BeanDefinition beanDefinition);
 
 }
