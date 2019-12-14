@@ -22,7 +22,8 @@ public class XmlBeanDefinitionReader {
 	public void loadBeanDefinitions(InputStream inputStream) {
 		Document document = DocumentReader.createDocument(inputStream);
 
-		XmlBeanDefinitionDocumentReader xmlBeanDefinitionDocumentReader = new XmlBeanDefinitionDocumentReader();
+		XmlBeanDefinitionDocumentReader documentReader = new XmlBeanDefinitionDocumentReader(this.beanDefinitionRegistry);
+		documentReader.loadBeanDefinitions(document.getRootElement());
 	}
 
 }

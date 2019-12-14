@@ -9,7 +9,7 @@ public class PropertyValue {
 
 	private String name;
 
-	private Object value;
+	private Object value; // Object 封装 TypedStringValue & RuntimeBeanReference
 
 	public PropertyValue(String name, Object value) {
 		super();

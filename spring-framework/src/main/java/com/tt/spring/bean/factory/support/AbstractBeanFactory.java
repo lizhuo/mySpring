@@ -7,7 +7,7 @@ import com.tt.spring.bean.factory.BeanFactory;
  * @Description: 定义Bean的获取流程
  * @date 2019-11-29 11:55
  */
-public class AbstractBeanFactory implements BeanFactory {
+public abstract class AbstractBeanFactory implements BeanFactory {
 
 	@Override
 	public Object getBean(String name) {

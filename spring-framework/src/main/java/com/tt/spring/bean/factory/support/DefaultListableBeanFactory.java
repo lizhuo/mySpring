@@ -5,10 +5,7 @@ import com.tt.spring.bean.definition.BeanDefinition;
 import com.tt.spring.bean.factory.registry.BeanDefinitionRegistry;
 import com.tt.spring.bean.resource.ClasspathResource;
 import com.tt.spring.bean.resource.Resource;
-import com.tt.spring.bean.utils.DocumentReader;
-import com.tt.spring.bean.xml.XmlBeanDefinitionDocumentReader;
 import com.tt.spring.bean.xml.XmlBeanDefinitionReader;
-import org.dom4j.Document;
 
 import java.io.InputStream;
 
