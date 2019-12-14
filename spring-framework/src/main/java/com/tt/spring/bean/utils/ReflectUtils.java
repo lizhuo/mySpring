@@ -36,7 +36,7 @@ public class ReflectUtils {
 			Class<?> clazz = beanInstance.getClass();
 			Field field = clazz.getDeclaredField(name);
 			field.setAccessible(true); // 强制写入
-			field.set(beanInstance, valueToUse);
+			field.set(beanInstance, valueToUse);  // TODO ?? 类型不一致会发生什么情况
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
