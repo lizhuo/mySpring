@@ -50,7 +50,7 @@ public class BeanDefinition {
 	}
 
 	public void addPropertyValue(PropertyValue propertyValue) {
-		//this.propertyValues.add(propertyValue);
+		this.propertyValues.add(propertyValue);
 	}
 
 	public String getClazzName() {
