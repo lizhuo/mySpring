@@ -14,6 +14,10 @@ public class Student {
 		System.out.println("初始化方法");
 	}
 
+	public String toString() {
+		return "Student[name:"  + name + ",course:" + course.toString() + "]";
+	}
+
 	public void destroyMethod() {
 		System.out.println("销毁方法");
 	}

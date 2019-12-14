@@ -23,7 +23,6 @@ public class ReflectUtils {
 			// TODO 可以根据输入参数获取指定构造参数的构造方法
 
 			Constructor<?> constructor = clazz.getConstructor();
-
 			// 默认调用无参构造进行对象的创建
 			return constructor.newInstance(args);
 		} catch (Exception e) {

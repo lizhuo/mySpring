@@ -14,6 +14,11 @@ public class Course {
 		System.out.println("我是对象初始化方法");
 	}
 
+	@Override
+	public String toString() {
+		return "Course[name:" + name + ", age:" + age + "]";
+	}
+
 	public String getName() {
 		return name;
 	}

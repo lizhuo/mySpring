@@ -1,8 +1,6 @@
 package com.tt.spring.bean.factory;
 
 
-import com.tt.spring.bean.definition.BeanDefinition;
-
 /**
  * @author lizhuo
  * @Description: 具备对bean实例进行装配功能 的工厂
@@ -12,9 +10,10 @@ public interface AutowireCapableBeanFactory extends BeanFactory  {
 
 	/**
 	 * 创建Bean实例的功能
-	 * @param beanDefinition
+	 * 提供创建bean的方式，可以有很多种
+	 * @param type
 	 * @return
 	 */
-	Object createBean(BeanDefinition beanDefinition);
+	Object createBean(Class<?> type);
 
 }

@@ -3,11 +3,7 @@ package com.tt.spring.bean.factory.support;
 
 import com.tt.spring.bean.definition.BeanDefinition;
 import com.tt.spring.bean.factory.registry.BeanDefinitionRegistry;
-import com.tt.spring.bean.resource.ClasspathResource;
-import com.tt.spring.bean.resource.Resource;
-import com.tt.spring.bean.xml.XmlBeanDefinitionReader;
 
-import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -41,4 +37,5 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 	public void registerBeanDefinition(String name, BeanDefinition beanDefinition) {
 		this.beanDefinitions.put(name, beanDefinition);
 	}
+
 }
