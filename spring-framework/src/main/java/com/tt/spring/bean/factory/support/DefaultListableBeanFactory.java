@@ -8,6 +8,8 @@ import com.tt.spring.bean.resource.Resource;
 import com.tt.spring.bean.xml.XmlBeanDefinitionReader;
 
 import java.io.InputStream;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author lizhuo
@@ -16,6 +18,11 @@ import java.io.InputStream;
  * @date 2019-11-29 09:43
  */
 public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFactory implements BeanDefinitionRegistry {
+
+	/**
+	 * 以beanName为Key BeanDefinition为Value的存储集合
+	 */
+	private Map<String, BeanDefinition> beanDefinitions = new HashMap<>();
 
 	public DefaultListableBeanFactory() {
 	}
@@ -36,11 +43,11 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 
 	@Override
 	public BeanDefinition getBeanDefinition(String name) {
-		return null;
+		return this.beanDefinitions.get(name);
 	}
 
 	@Override
 	public void registerBeanDefinition(String name, BeanDefinition beanDefinition) {
-
+		this.beanDefinitions.put(name, beanDefinition);
 	}
 }
