@@ -29,6 +29,7 @@ public class TestSpringFramework {
 		xmlBeanDefinitionReader.loadBeanDefinitions(inputStream);
 
 		Student student = (Student) beanFactory.getBean("student");
+		System.out.println(student);
 
 	}
 }
