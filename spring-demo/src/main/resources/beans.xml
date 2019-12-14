@@ -1,7 +1,7 @@
 <beans>
     <bean id="student" class="com.tt.spring.po.Student">
         <!-- String类型 -->
-        <property name="name" value="zengkeyan"></property>
+        <property name="name" value="lizhuo"></property>
         <!-- 引用类型 -->
         <property name="course" ref="course"></property>
     </bean>

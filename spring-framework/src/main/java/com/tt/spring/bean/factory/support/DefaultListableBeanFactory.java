@@ -32,15 +32,6 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 		return null;
 	}
 
-	public DefaultListableBeanFactory(String location) {
-		// 将资源抽象为一个接口 通过该接口 可以获取不同地方（网络、文件系统、classpath）的资源
-		Resource resource = new ClasspathResource(location);
-		InputStream inputStream =  resource.getResource();
-
-		XmlBeanDefinitionReader xmlBeanDefinitionReader = new XmlBeanDefinitionReader(this);
-		xmlBeanDefinitionReader.loadBeanDefinitions(inputStream);
-	}
-
 	@Override
 	public BeanDefinition getBeanDefinition(String name) {
 		return this.beanDefinitions.get(name);

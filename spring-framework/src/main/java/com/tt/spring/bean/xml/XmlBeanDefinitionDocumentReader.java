@@ -96,7 +96,7 @@ public class XmlBeanDefinitionDocumentReader {
 		PropertyValue pv = null;
 		if (value != null && !"".equals(value)) {
 			// 因为spring配置文件中value是String类型，而对象中的属性值是各种各样的，所以要存储类型
-			Class<?> targetFieldType = ReflectUtils.getTypeByFieldName(beanDefinition.getBeanName(), name);
+			Class<?> targetFieldType = ReflectUtils.getTypeByFieldName(beanDefinition.getClazzName(), name);
 
 			TypedStringValue typedStringValue = new TypedStringValue(value);
 			typedStringValue.setTargetType(targetFieldType);
