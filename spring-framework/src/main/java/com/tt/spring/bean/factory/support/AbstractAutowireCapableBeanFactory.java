@@ -41,6 +41,11 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 		// TODO BeanPostProcessor的后置方法执行 AOP代理对象产生的入口
 	}
 
+	/**
+	 * afterPropertySet or ReflectUtils 2选1
+	 * @param singleton
+	 * @param bd
+	 */
 	private void initMethod(Object singleton, BeanDefinition bd) {
 		// TODO InitializingBean 标记接口 的处理 调用的是afterPropertySet方法
 
